@@ -1,9 +1,9 @@
 # Table of Contents
 
-* [Meerkat](https://github.com/Jacob-Hegy/HTB-Write-Ups/Tool%20List.md##Meerkat)
-* [RogueOne](https://github.com/Jacob-Hegy/HTB-Write-Ups/blob/main/Tool%20List.md##RogueOne)
-* [Lockpick1](https://github.com/Jacob-Hegy/HTB-Write-Ups/blob/main/Tool%20List.md##Lockpick1)
-* [Knock Knock](https://github.com/Jacob-Hegy/HTB-Write-Ups/blob/main/Tool%20List.md##Knock%20Knock)
+* [Meerkat](#Meerkat)
+* [RogueOne](#RogueOne)
+* [Lockpick1](#Lockpick1)
+* [Knock Knock](#Knock%20Knock)
 
 ## Meerkat
 
