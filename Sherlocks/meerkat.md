@@ -10,7 +10,18 @@ We’re given a zip file containing a .pcap file of network traffic from the tim
 
 Let’s dive in!
 
-## **Getting Our Bearings**
+## Table of Contents:
+* [Getting Our Bearings](#getting-our-bearings) (Task 1)
+* [Diagnosing the Problem](#diagnosing-the-problem) (Tasks 2-4)
+* [Following the Breadcrumbs](#following-the-breadcrumbs) (Tasks 5-11)
+* [Post-Compromise](#post-compromise)
+* [What Actually Happened?](#what-actually-happened)
+* [What Now?](#what-now)
+* [Conclusion](#conclusion)
+
+[Download necessary tools here](https://github.com/Jacob-Hegy/HTB-Write-Ups/blob/main/Tool%20List.md#meerkat)
+
+## Getting Our Bearings
 
 Starting with our .pcap file, we can pop that open in Wireshark and check the Endpoints table to get a feel for what IP addresses may be involved in whatever might have happened.
 
@@ -115,7 +126,7 @@ The attacker has uploaded a bash script to the web server that downloads another
 
 ![](https://cdn-images-1.medium.com/max/2000/1*cMG2vqYiu7ugmnK7Oy5LpA.png)
 >  Task 8 Answer: 0dc54416c346584539aa985e9d69a98e
-EDIT: Task 8 was changed to ask for the file’s name
+> EDIT: Task 8 was changed to ask for the file’s name
 See the next task for the appropriate answer
 
 We’ll go ahead and following the link to the other file used in the first script the attacker uploaded. Going to that webpage, we’re once again met with raw text.
@@ -127,8 +138,7 @@ What’s happened is the attacker has successfully uploaded a known RSA key to t
 We’ll hash this file as well to add to our filters.
 
 ![](https://cdn-images-1.medium.com/max/2000/1*2yJD9IeQuyqP15IY6UhW0A.png)
->  Task 9 Answer: dbb906628855a433d70025b6692c05e7
-Task 9 New Answer: hffgra4unv
+>  Task 9 Answer: hffgra4unv
 
 Reviewing the previous file we analyzed, we can see that the new SSH key was being append to the keys stored in /home/ubuntu/.ssh/authorized_keys.
 >  Task 10 Answer: /home/ubuntu/.ssh/authorized_keys
