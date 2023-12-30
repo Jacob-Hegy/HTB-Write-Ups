@@ -12,8 +12,8 @@ We’re given a .mem file containing a RAM dump to start rummaging through. So w
 
 ## Table of Contents:
 * [Checking Out the Memory](#checking-out-the-memory) (Tasks 1 & 2)
-* [Putting Together the Details](#putting-together-the-details) (Tasks 3-6)
-* [The Nitty-Gritty](#the-nitty-gritty) (Task 7)
+* [Putting Together the Details](#putting-together-the-details) (Tasks 3-7)
+* [The Nitty-Gritty](#the-nitty-gritty)
 * [Who?](#who)
 * [What Now?](#what-now)
 * [Conclusion](#conclusion)
