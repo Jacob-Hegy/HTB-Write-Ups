@@ -18,6 +18,8 @@ We’re given a .mem file containing a RAM dump to start rummaging through. So w
 * [What Now?](#what-now)
 * [Conclusion](#conclusion)
 
+[Download necessary tools here](https://github.com/Jacob-Hegy/HTB-Write-Ups/blob/main/Tool%20List.md#rogueone)
+
 ## Checking Out the Memory
 
 Before we kick things off, we need to get a bit of info on the memory dump. Running a quick “file 20230810.mem” tells us that we’re working with a Windows machine.
