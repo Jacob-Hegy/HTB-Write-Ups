@@ -3,7 +3,7 @@
 * [Meerkat](#Meerkat)
 * [RogueOne](#RogueOne)
 * [Lockpick1](#Lockpick1)
-* [Knock Knock](#Knock%20Knock)
+* [Knock Knock](#Knock-Knock)
 
 ## Meerkat
 
