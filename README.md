@@ -15,6 +15,8 @@ I'm doing all this in a Kali Linux 2023.4 VM running on VirtualBox.
 
 ```Any packages that I download for a given challenge will be listed like so.```
 
+Any tools that I used for the challenges can be found in this [tool list](https://github.com/Jacob-Hegy/HTB-Write-Ups/blob/main/Tool%20List.md).
+
 ## Corrections
 
 HackTheBox occasionally makes changes to the questions for challenges on their site. If you notice an out-of-date answer in one of my write-ups, feel free to submit the issue and I'll get around to it as soon as I can. I am a one man team, so please understand if it takes a bit for things to get fixed!
