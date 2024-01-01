@@ -1,6 +1,6 @@
-# My HackTheBox Write-Ups
+# My Security Projects
 
-This is a collection of the write-ups I've created while completing various challenges on HackTheBox as well as the associated files with any of my solutions.
+This is a collection of various cybersecurity projects I've created/completed. It's a mix of write-ups, stuff I've come up with, and a few other things.
 
 ## Who am I?
 
@@ -11,11 +11,15 @@ I host forensic workshops for the Information Security team at UofH to help buil
 ## Layout
 
 The write-ups are sorted into various categories. Currently there's just the "Sherlocks" folder, but more will be added as challenges are completed. You'll either find the respective .md of each challenge within the folders or a folder named after the challenge that contains both the .md and any code that was used.
-I'm doing all this in a Kali Linux 2023.4 VM running on VirtualBox.
+
+Any projects that I upload will feature a README of their own for a detailed explanation on what all is going on.
+
+
+All challenges are completed in a Kali Linux 2023.4 VM running on VirtualBox or on my Windows 10 host.
 
 ```Any packages that I download for a given challenge will be listed like so.```
 
-Any tools that I used for the challenges can be found in this [tool list](https://github.com/Jacob-Hegy/HTB-Write-Ups/blob/main/Tool%20List.md).
+Any tools that I used for the HackTheBox or CTF challenges can be found in this [tool list](https://github.com/Jacob-Hegy/HTB-Write-Ups/blob/main/Tool%20List.md).
 
 ## Corrections
 
@@ -23,8 +27,8 @@ HackTheBox occasionally makes changes to the questions for challenges on their s
 
 ## Wrapping Up
 
-That's just about it! I hope my solutions help you out in your security endeavors! If you end up using any of my code in a write-up of your own, I'd appreciate being given proper credit!
+That's just about it! I hope my solutions help you out in your security endeavors and my creations inspire you to create some stuff of your own! If you end up using any of my code in a write-up of your own, I'd appreciate being given proper credit!
 
-I can't make any promises on how regularly I'll upload. It'll depend on what my schedule looks like at any given time, but once I complete a challenge it will eventually find its way onto here.
+I can't make any promises on how regularly I'll upload. It'll depend on what my schedule looks like at any given time, but once I complete a challenge or bang out a project it will eventually find its way onto here.
 
 **Thanks for your time! Happy hacking!**
