@@ -2,6 +2,8 @@
 
 This is a collection of various cybersecurity projects I've created/completed. It's a mix of write-ups, stuff I've come up with, and a few other things.
 
+At the time of writing this, only a few write-ups have been uploaded. I'm in the process of organizing the project files before uploading them, so check back later for more additions!
+
 ## Who am I?
 
 My name is Jacob Hegy. I recently completed my Bachelor of Computer Science @ the University of Houston and I'm working on continuing to develop my skillset in cybersecurity.
