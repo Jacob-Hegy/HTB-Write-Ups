@@ -12,7 +12,7 @@ I will be the first to admit, these notes won't be for everyone. I already have 
 - IP address fundamentals
 - MAC addresses
 
-That's not an exhaustive list, just a few topics to give you an idea of the level of stuff I will be glossing over as opposed to doing detail notes for. I encourage those that lack knowledge in any topics I seemingly bring up out of nowhere to go through the courses themselves. They'll cover those fundamentals that I'm using as a bar for entry.
+That's not an exhaustive list, just a few topics to give you an idea of the level of stuff I will be glossing over as opposed to doing detailed notes for. I encourage those that lack knowledge in any topics I seemingly bring up out of nowhere to go through the courses themselves. They'll cover those fundamentals that I'm using as a bar for entry.
 
 ## Study Resources
 I'm using a mix of two Udemy courses at the moment, those being:
