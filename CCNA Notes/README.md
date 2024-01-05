@@ -5,7 +5,7 @@ That's led me to pursuing a CCNA. I'll be uploading notes for each section as I 
 
 ## Disclaimer
 
-I will be the first to admit, these notes won't be for everyone. I already have a background in IT and computer science, so these notes will be appropriate at someone with a similar background. Some of the more basic stuff that I'll be skipping over are:
+I will be the first to admit, these notes won't be for everyone. I already have a background in IT and computer science, so these notes will be appropriate for someone with a similar background. Some of the more basic stuff that I'll be skipping over are:
 - Binary
 - Hexadecimal
 - Wireshark
