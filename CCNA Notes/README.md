@@ -14,6 +14,10 @@ I will be the first to admit, these notes won't be for everyone. I already have 
 
 That's not an exhaustive list, just a few topics to give you an idea of the level of stuff I will be glossing over as opposed to doing detailed notes for. I encourage those that lack knowledge in any topics I seemingly bring up out of nowhere to go through the courses themselves. They'll cover those fundamentals that I'm using as a bar for entry.
 
+## "What about labs?"
+
+A critical part of studying for the CCNA is completing labs within Cisco Packet Tracer or GNS3. I might throw together write-ups for the labs as I go through the courses that will give a detailed walkthrough for solving them. It'll depend on the complexity of the given lab and how necessary I'd deem a write-up for it, but that's not to say there won't be any. Just TBD as of now.
+
 ## Study Resources
 I'm using a mix of two Udemy courses at the moment, those being:
 - [Jeremy's IT Lab CCNA 200-301 Course](https://www.udemy.com/course/complete-cisco-ccna-200-301-course/)
