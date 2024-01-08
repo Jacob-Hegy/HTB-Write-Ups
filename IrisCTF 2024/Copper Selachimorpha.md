@@ -1,5 +1,5 @@
 
-## IrisCTF 2024 — **Copper Selachimorpha Write-Up**
+## IrisCTF 2024 Write-Up: Copper Selachimorpha | Jacob Hegy
 
 ![](https://cdn-images-1.medium.com/max/2000/1*2zcg4bx9ILcf5-4g6rKd5Q.png)
 
