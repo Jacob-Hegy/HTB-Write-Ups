@@ -204,7 +204,7 @@ Now we just have to make the file. We can use the following script to do so:
      with open(sys.argv[2], "wb") as g:
       g.write(pack(form, *bytearray.fromhex(hexdump)))
 
-Using command-line arguments, we’ll execute the script with *python dumpToFile.py fishhex.txt beautiful_fish.png. *After we run that, we can check our files and we’ll find something waiting for us:
+Using command-line arguments, we’ll execute the script with `python dumpToFile.py fishhex.txt beautiful_fish.png.` After we run that, we can check our files and we’ll find something waiting for us:
 
 ![](https://cdn-images-1.medium.com/max/2216/1*5BAD3eAo3InXc3fck9IjfQ.png)
 
