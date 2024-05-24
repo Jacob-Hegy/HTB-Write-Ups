@@ -1,2 +1,2 @@
-Challenge: Currently underway
+Challenge: Completed
 Write-Up: COMING SOON
