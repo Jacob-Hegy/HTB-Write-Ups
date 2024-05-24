@@ -1,1 +1,105 @@
+This problem relies on python's random library. It uses randomness in an attempt to throw us off. However, in doing so it makes itself vulnerable.
 
+This vulnerability is made possible thanks to the `output.txt` file. We're given 624 random 32-bit numbers. Keep this number in mind.
+
+Python's `random` module implements pseudo-random number generation using what's called "Mersenne Twister". For normal usage, the algorithm is suitably random. However, it is nowhere near cryptographic standards. In fact, we can reverse it to get the original seed. In fact, we can reverse it using, you guessed it, 624 randomly generated numbers from the same seed.
+
+I used [this blog](https://blog.ollien.com/posts/reverse-mersenne-twister/) for the building of my Mersenne Twister reversal algorithm. Go check it out!
+
+I'm gonna jump straight to my code based on the assumption that you read the above article. This code will provide us with the original seed used:
+```Python
+N = 624
+M = 397
+A = 0x9908b0df
+# Upper 1 bit (w - r = 1)
+UPPER_MASK = 0x80000000
+# Lower 31 bits (r = 31)
+LOWER_MASK = 0x7fffffff
+def twist_state_map(state):
+    res = []
+    for i in range(N):
+        y = (state[i] & UPPER_MASK) | (state[(i+1) % N] & LOWER_MASK)
+        next_item = state[(i + M) % N] ^ (y >> 1) ^ (0 if y % 2 == 0 else A)
+        res.append(next_item)
+    return res
+W = 32
+def undo_right_transform(value, shift):
+    res = value
+    for i in range(0, W, shift):
+        # Work on the next shift sized portion at a time by generating a mask for it.
+        portion_mask = '0' * i + '1' * shift + '0' * (W - shift - i)
+        portion_mask = int(portion_mask[:W], 2)
+        portion = res & portion_mask
+        res ^= portion >> shift
+    return res
+    
+def undo_left_transform(value, shift, mask):
+    res = value
+    for i in range(0, W, shift):
+        # Work on the next shift sized portion at a time by generating a mask for it.
+        portion_mask = '0' * (W - shift - i) + '1' * shift + '0' * i
+        portion_mask = int(portion_mask, 2)
+        portion = res & portion_mask
+        res ^= ((portion << shift) & mask)
+    return int(res)
+
+if __name__ == "__main__":
+	L = 18
+	T = 15
+	C = 0xefc60000
+	S = 7
+	B = 0x9d2c5680
+	U = 11
+	with open("twister_output.txt", 'r') as f:
+    		samples = [x.strip() for x in f.readlines()]
+    		samples = samples[0:624]
+	state_array = []
+	for x in samples:
+		x = int(x)
+		y = undo_right_transform(x, L)
+		y = undo_left_transform(y, T, C)
+		y = undo_left_transform(y, S, B)
+		y = undo_right_transform(y, U)
+		state_array.append(y)
+	with open("random_output.txt", "w") as f:
+		for i in range(256):
+		# Generate the next 624 samples by iterating over the state array
+			for item in state_array:
+				y = item ^ (item >> U)
+				y ^= (y << S) & B
+				y ^= (y << T) & C
+				y ^= y >> L
+				f.write(str(y))
+				f.write('\n')
+		# Twist the state map again, as we have exhausted our samples
+			state_array = twist_state_map(state_array)
+```
+Using this state array, we're able to get the random numbers used as one-time passwords on the key. Those numbers are the following:
+`1611151228`
+`2738249014`
+`735993813`
+`3238915233`
+`1365045312`
+`275633712`
+`1289537748`
+`3348729455`
+`3357144180`
+`2466658435`
+Now that we have the numbers, let's take a look at how the flag is scrambled:
+```Python
+while Flag:
+        FlagPre, Flag = Flag[:4], Flag[4:]
+        otp = random.getrandbits(32)
+        res = int.from_bytes(FlagPre,"big")
+        f.write(f'{res^otp}\n')
+```
+So what looks to be happening is `FlagPre` is grabbing the four left-most characters off of flag as `Flag` pops those characters off. `FlagPre` is then XOR'd against the otp generated with the random function. That means all we have to do to get our hex characters back (base 10 form) is XOR the correct random numbers against the numbers in rows 625-634 in `output.txt`
+
+The following program does that for us:
+```Python
+rand_nums = [1611151228, 2738249014, 735993813, 3238915233, 1365045312, 275633712, 1289537748, 3348729455, 3357144180, 2466658435]
+ciphertext = [608990215, 3982043497, 1487995047, 2690877646, 1006866734, 1761655106, 696493478, 2565598977, 2893710869, 4033693065]
+for (i, j) in zip(rand_nums, ciphertext):
+	print(bytearray.fromhex(str(hex(i ^ j))[2:]).decode(), end = '')
+```
+This results in the following flag: `DDC{Not_so_random_anymore_mr_randcrack}`
