@@ -31,21 +31,21 @@
 * [Volatility Framework](https://github.com/volatilityfoundation/volatility3/releases) + [Install Guide](https://www.varonis.com/blog/how-to-use-volatility)
 * [Ghidra](https://github.com/NationalSecurityAgency/ghidra/releases) + [Install Guide](https://ghidra-sre.org/InstallationGuide.html)
 
-# Duck Hans
+## Duck Hans
 
 * [pdftool](https://www.pdftool.org/en)
 * [exiftool](https://exiftool.org/)
 
-# Annoying Colleagues
+## Annoying Colleagues
 
 * [Volatility Framework](https://github.com/volatilityfoundation/volatility3/releases) + [Install Guide](https://www.varonis.com/blog/how-to-use-volatility)
 * [Ghidra](https://github.com/NationalSecurityAgency/ghidra/releases) + [Install Guide](https://ghidra-sre.org/InstallationGuide.html)
 
-# Spy Hunt
+## Spy Hunt
 
 * [Wireshark](https://www.wireshark.org/download.html)
 
-# Copper Selachimorpha
+## Copper Selachimorpha
 
 * [Aircrack-ng](https://www.aircrack-ng.org/)
 * [Wireshark](https://www.wireshark.org/download.html)
