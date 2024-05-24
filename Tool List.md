@@ -2,7 +2,6 @@
 
 * [Meerkat](#Meerkat)
 * [RogueOne](#RogueOne)
-* [Lockpick1](#Lockpick1)
 * [Knock Knock](#Knock-Knock)
 * [BOughT](#BOughT)
 * [Duck Hans](#Duck-Hans)
@@ -17,10 +16,6 @@
 ## RogueOne
 
 * [Volatility Framework](https://github.com/volatilityfoundation/volatility3/releases) + [Install Guide](https://www.varonis.com/blog/how-to-use-volatility)
-
-## Lockpick1
-
-* [Ghidra](https://github.com/NationalSecurityAgency/ghidra/releases) + [Install Guide](https://ghidra-sre.org/InstallationGuide.html)
 
 ## Knock Knock
 
